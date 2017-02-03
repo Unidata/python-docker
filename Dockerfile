@@ -8,6 +8,6 @@ RUN jupyter serverextension enable --py jupyterlab --sys-prefix
 RUN conda install -n python2 metpy siphon cartopy netcdf4 xarray
 
 # install a package into the default (python 3.x) environment
-RUN conda install -n python3 metpy siphon cartopy netcdf4 xarray
+RUN conda install metpy siphon cartopy netcdf4 xarray
 
 USER jovyan
