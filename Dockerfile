@@ -11,3 +11,7 @@ RUN conda install -n python2 metpy siphon cartopy netcdf4 xarray
 RUN conda install metpy siphon cartopy netcdf4 xarray
 
 USER jovyan
+
+# Add in our custom theming
+ADD custom/ $HOME/.jupyter/custom/
+ADD custom/logo.png /opt/conda/lib/python3.5/site-packages/notebook/static/base/images/logo.png
